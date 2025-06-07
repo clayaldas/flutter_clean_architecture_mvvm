@@ -3,12 +3,12 @@ import 'package:flutter_clean_architecture_mvvm/src/app/features/notes/domain/re
 import 'package:injectable/injectable.dart';
 
 @injectable
-class DecreaseCountUsecase {
+class IncreaseCountUsecase {
   final NoteRepository _repository;
 
-  DecreaseCountUsecase(this._repository);
+  IncreaseCountUsecase(this._repository);
 
   Future<void> call() async {
-    await _repository.decreaseFavoriteCount();
+    _repository.increaseFavoriteCount();
   }
 }

@@ -10,7 +10,7 @@ abstract class NoteRepository {
 
   Future<Either<ApiError, bool>> deleteNote({required int noteId});
 
-  Future<void> incrementFavoriteCount();
+  Future<void> increaseFavoriteCount();
 
-  Future<void> decrementeFavoriteCount();
+  Future<void> decreaseFavoriteCount();
 }
